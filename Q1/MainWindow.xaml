@@ -1,0 +1,30 @@
+﻿<Window x:Class="Q1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Q1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Bands" VerticalAlignment="Top" Margin="65,45,0,0" Height="30" Width="69" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="65,106,0,0" Width="35"><Run Text="Genre"/><LineBreak/></TextBlock>
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="118,106,0,0"/>
+        <ListBox HorizontalAlignment="Left" Height="202" VerticalAlignment="Top" Width="173" Margin="65,160,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="380,51,0,0" FontSize="22"><Run Text="Band Information"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Formed:" VerticalAlignment="Top" Margin="380,160,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Members:" VerticalAlignment="Top" Margin="380,181,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="380,219,0,0" FontSize="22" Height="30"><Run Text="Albums"/><LineBreak/><Run/></TextBlock>
+        <ListBox HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="186" Margin="380,266,0,0" RenderTransformOrigin="0.5,0.5">
+            <ListBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.435"/>
+                    <RotateTransform Angle="0.649"/>
+                    <TranslateTransform Y="-0.641"/>
+                </TransformGroup>
+            </ListBox.RenderTransform>
+        </ListBox>
+
+    </Grid>
+</Window>
